@@ -1,17 +1,21 @@
 $(document).ready(function(){
   $("#stress_survey").submit(function(event) {
     event.preventDefault();
-    var warningSigns = $("input:checkbox[name=warningSigns]:checked");
-    warningSigns.each(function(){
+
+
+    var warningSigns = 0  $("input:checkbox[name=warningSigns]:checked").each(function(){
+    var stressors = parseInt($(this).val())
+    stressors += warningSigns
+
+    });
+    var healthSigns = 0 $("input:checkbox[name=healthSigns]:checked").each(function(){
+
+    });
+    var copingMethods = 0 $("input:checkbox[name=copingMethods]:checked").each(function(){
+
+    });
       $("#goodJob").show();
-    });
-    var healthSigns = $("input:checkbox[name=healthSigns]:checked");
-    healthSigns.each(function(){
-      $("#doBetter").show();
-    });
-    var copingMethods = $("input:checkbox[name=copingMethods]:checked");
-    copingMethods.each(function(){
-      $("#dieSoon").show();
-    });
+        $("#doBetter").show();
+            $("#dieSoon").show();
   });
 });
