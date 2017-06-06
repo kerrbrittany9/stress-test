@@ -9,6 +9,9 @@
   </head>
   <body>
     <div class="container">
+      <div class="jumbotron">
+        <h1>Stress Test</h1>
+      </div>
       <form id="stress_survey">
         <div class="form-group">
           <input type="checkbox" name="warningSigns" value="sleep">Lack of sleep<br>
@@ -32,6 +35,19 @@
           <input type="checkbox" name="copingMethods" value="art">Find an artistic outlet<br>
         </div>
       </form>
+
+      <button type="submit" name="button">Sumbit</button>
+      <div class="result">
+        <div id="goodJob">
+          <p>Wow! Looks like you really know how to calm yourself down. Keep it up.</p>
+        </div>
+        <div id="doBetter">
+          <p>You have found some ways to manage your stress. Keep looking for more!</p>
+        </div>
+        <div id="dieSoon">
+          <p>Oh my! Please go see your doctor soon and maybe sign up for talk therapy. Best of luck</p>
+        </div>
+      </div>
     </div>
   </body>
 </html>
